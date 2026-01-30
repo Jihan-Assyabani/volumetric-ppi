@@ -44,8 +44,8 @@ def angular_diff(azi, wdir):
 def VAD_withbounds(cscan, z_col, azis_col, eles_col, ndatamin = 50, range_bounds=None, altitude_bounds=None, timestamp=None,
                    plot_VAD=False, plot_title_initial=None, save_dir=None, vmin=None, vmax=None, alpha=None,cmap='viridis', vnorm_fit=False):
     """
-    This function is used to apply VAD fit
-    
+    This function is used to apply VAD fit to lidar data. This function is modified from 
+    a script originally written by Johannes Paulsen @ForWind Oldenburg.
     """
     
     VAD_params = pd.DataFrame(columns=['range_bin', 'range_min', 'range_max', 'alt_bin','alt_lower', 'alt_upper', 
@@ -490,4 +490,5 @@ def mesh2polarrhi(cscan, elevcol='eles', rangecol='range', wspd_col='wspd', yaw_
         results.append(TKE)
 
     return tuple(results)
+
 
