@@ -1,5 +1,6 @@
 # Volumetric PPI
 
-<img title="volumetric-ppi" alt="Alt text" src="/Figures/volumetric-ppi.png">
+Volumetric PPI is a python-based algorithm to reconstruct volumetric wind field from plan position indicator (PPI) scanning long-range doppler wind lidar.
+<img width=400px src="/Figures/volumetric-ppi.png">
 
 ## Introduction
